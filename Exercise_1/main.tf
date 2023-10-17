@@ -1,5 +1,5 @@
 # TODO: Designate a cloud provider, region, and credentials
-# I have already setup AWS profile in my machine, so I do not provice aws credentials here
+# I have already setup AWS profile in my machine, so I do not provide aws credentials here
 provider "aws" {
   region = "us-east-1"
 }

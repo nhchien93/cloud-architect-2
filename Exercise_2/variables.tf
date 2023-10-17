@@ -15,3 +15,15 @@ variable "deployment_package" {
   type        = string
   default     = "deployment_package.zip"
 }
+
+variable "lambda_policy_name" {
+  description = "IAM policy name for Lambda"
+  type        = string
+  default     = "lambda_policy"
+}
+
+variable "lambda_role_name" {
+  description = "IAM role name for lambda"
+  type        = string
+  default     = "lambda_execution_role"
+}
