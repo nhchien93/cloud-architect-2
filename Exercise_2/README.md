@@ -5,6 +5,12 @@ Check tf format
 $ terraform fmt -recursive
 ```
 
+Create AWS Profile on your machine
+```sh
+$ aws configure --profile uda
+```
+Provide your aws access key id, aws secret access key and aws session token
+
 Run
 ```sh
 $ AWS_PROFILE=uda terraform init
