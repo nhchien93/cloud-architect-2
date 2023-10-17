@@ -12,8 +12,8 @@ resource "aws_instance" "Udacity-T2" {
 
   tags = {
     Name    = "Udacity T2"
-    Creator = ChienNH2
-    Provide = terraform
+    Creator = "ChienNH2"
+    Provide = "terraform"
   }
 }
 
@@ -25,7 +25,7 @@ resource "aws_instance" "Udacity-M4" {
 
   tags = {
     Name    = "Udacity M4"
-    Creator = ChienNH2
-    Provide = terraform
+    Creator = "ChienNH2"
+    Provide = "terraform"
   }
 }
