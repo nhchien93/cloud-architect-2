@@ -1,0 +1,36 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+150,19553.4,234790.80,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+My Estimate,US East (N. Virginia),Web Servers,Amazon EC2 ,0,2400,28800.00,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 6), Advance EC2 instance (m4.2xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), EBS Storage amount (100 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),App Server,Amazon EC2 ,0,4835.2,58022.40,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 8), Advance EC2 instance (c5.4xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), EBS Storage amount (100 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),DB Servers,Amazon EC2 ,0,2788.32,33459.84,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 4), Advance EC2 instance (c4.4xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), EBS Storage amount (200 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),Load balancer,Application Load Balancer,0,28.11,337.32,USD,,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),Lambda Function,AWS Lambda,0,237.43,2849.16,USD,,"Invoke Mode (Buffered), Architecture (x86), Architecture (x86), Number of requests (2000 per hour), Amount of ephemeral storage allocated (2048 MB)"
+My Estimate,US East (N. Virginia),Route53,Amazon Route 53,0,53.41,640.92,USD,,"Hosted Zones (1), Additional Records in Hosted Zones (5)"
+My Estimate,US East (N. Virginia),API Gateway,Amazon API Gateway,0,9,108.00,USD,,"REST API request units (millions), Cache memory size (GB) (None), WebSocket message units (thousands), HTTP API requests units (millions), Average size of each request (256 KB), Average message size (32 KB), Requests (2 per month), Requests (2 per month)"
+My Estimate,US East (N. Virginia),RDS Master,Amazon RDS for MySQL,0,4373.25,52479.00,USD,,"Storage for each RDS instance (General Purpose SSD (gp3)), Storage amount (100 GB), Quantity (1), Instance type (db.m5.8xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (50 GB), Total Size of Backup Processed for Export (GB) (200 per month)"
+My Estimate,US East (N. Virginia),Cognito,Amazon Cognito,0,256.75,3081.00,USD,,"Number of monthly active users (MAU) (5000), Advanced security features (Enabled)"
+My Estimate,US East (N. Virginia),DynamoDB,DynamoDB provisioned capacity,150,102.57999999999998,1380.96,USD,,"Table class (Standard), Average item size (all attributes) (2 KB), Write reserved capacity term (1 year), Read reserved capacity term (1 year), Data storage size (100 GB)"
+My Estimate,US East (N. Virginia),S3,S3 Standard,0,47.42,569.04,USD,,"S3 Standard storage (2 TB per month), PUT, COPY, POST, LIST requests to S3 Standard (50000), GET, SELECT, and all other requests from S3 Standard (50000), Data returned by S3 Select (5 GB per month), Data scanned by S3 Select (20 GB per month)"
+My Estimate,US East (N. Virginia),S3,Data Transfer,0,0,0.00,USD,,"DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month)"
+My Estimate,US East (N. Virginia),DB ReadOnly,Amazon RDS for MySQL,0,4350.4,52204.80,USD,,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (30 GB), Quantity (1), Instance type (db.m5.8xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,41.85,502.20,USD,,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),Cloudwatch,Amazon CloudWatch,0,29.68,356.16,USD,,"Number of Metrics (includes detailed and custom metrics) (10), Standard Logs: Data Ingested (20 GB), Logs Delivered to CloudWatch Logs: Data Ingested (20 GB), Number of Dashboards (5), Number of Standard Resolution Alarm Metrics (5)"
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
+
+"Add Amazon Cloudwatch for monitoring and alert"
+"Update number of EC2 instances for webserver and application server"
+"Change throughput, iops and size of EBS"
+"Increase memory and ephemeral storage of Lambda Function"
+"Increase number of incoming requests to API Gateway"
+"Change instance type of Master RDS DB and Read replica RDS DB"
+"Change number of users sign in through OIDC federation"
