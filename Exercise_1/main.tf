@@ -18,14 +18,3 @@ resource "aws_instance" "Udacity-T2" {
 }
 
 # TODO: provision 2 m4.large EC2 instances named Udacity M4
-resource "aws_instance" "Udacity-M4" {
-  count         = "2"
-  ami           = "ami-053b0d53c279acc90"
-  instance_type = "m4.large"
-
-  tags = {
-    Name    = "Udacity M4"
-    Creator = "ChienNH2"
-    Provide = "terraform"
-  }
-}
