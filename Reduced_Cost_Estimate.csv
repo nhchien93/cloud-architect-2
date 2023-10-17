@@ -25,3 +25,11 @@ My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,3
 
 Acknowledgement
 "* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
+
+"Decrease number of EC2 instances for webserver and application server"
+"Reduce EC2 instance type"
+"Reduce throughput, iops and size of EBS"
+"Reduce memory and ephemeral storage of Lambda Function"
+"Reduce number of incoming requests to API Gateway"
+"Change instance type of read replica RDS DB"
+"Reduce number of users sign in through OIDC federation"
